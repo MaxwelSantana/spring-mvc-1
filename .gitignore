@@ -1,1 +1,3 @@
 target/
+target/classes/br/com/casadocodigo/loja/conf/AppWebConfiguration.class
+*.class
