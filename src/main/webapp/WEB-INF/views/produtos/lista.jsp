@@ -42,6 +42,8 @@ body {
 							Produtos </a></li>
 					<li><a href="${s:mvcUrl('PC#form').build()}"> Cadastro de
 							Produtos </a></li>
+					<li class="nav-item"><a href="<c:url value="/logout" />">Sair</a></span>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"> <security:authentication
