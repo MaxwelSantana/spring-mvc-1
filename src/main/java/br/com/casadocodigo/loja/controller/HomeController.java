@@ -43,7 +43,7 @@ public class HomeController {
         Usuario usuario = new Usuario(); 
         usuario.setNome("Admin");
         usuario.setEmail("admin@casadocodigo.com.br");
-        usuario.setSenha("$04$qP517gz1KNVEJUTCkUQCY.JzEoXzHFjLAhPQjrg5iP6Z/UmWjvUhq");
+        usuario.setSenha("$2a$10$lt7pS7Kxxe5JfP.vjLNSyOXP11eHgh7RoPxo5fvvbMCZkCUss2DGu");
         usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
         usuarioDao.gravar(usuario);
 
