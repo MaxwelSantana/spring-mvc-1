@@ -11,7 +11,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import br.com.casadocodigo.loja.daos.UsuarioDAO;
 
-@EnableWebSecurity(debug = true)
+@EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Autowired
     private UsuarioDAO usuarioDao;
