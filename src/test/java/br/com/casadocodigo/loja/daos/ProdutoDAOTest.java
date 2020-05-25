@@ -45,4 +45,15 @@ public class ProdutoDAOTest {
         Assert.assertEquals(new BigDecimal(80).setScale(2), valor);
 
     }
+    
+    @Test
+    @Transactional
+    public void deveRetornarItem() {
+    	Produto produto = ProdutoBuilder
+    			.newProduto().buildOne();
+		produtoDao.gravar(produto);
+		
+		Produto findProd = produtoDao.find(produto.getId());
+		Assert.assertNotNull(findProd);
+    }
 }
