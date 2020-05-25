@@ -26,7 +26,7 @@ public class UsuarioDAO implements UserDetailsService {
 	    if(usuarios.isEmpty()){
 	        throw new UsernameNotFoundException("O usuário "+ email +" não foi encontrado");
 	    }
-	    System.out.println(usuarios.get(0).getEmail());
+
 	    return usuarios.get(0);
 	}
 
